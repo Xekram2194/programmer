@@ -1,0 +1,61 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Victor Mono", monospace;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilo para el video de fondo */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.5;
+}
+/* Overlay oscuro */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.701); /* Ajusta la opacidad aquí */
+    z-index: -1;
+}
+.tagFirst{
+    color:rgba(255, 0, 0, 0.879)
+}
+
+/* Contenedor del formulario */
+.container {
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.input-field input {
+    color: white;
+}
+
+.input-field input::placeholder {
+    font-family: "Victor Mono", monospace;/* Cambia a la fuente que prefieras */
+    color: rgba(255, 255, 255, 0.6); /* Ajusta el color del placeholder si es necesario */
+}
+
+
+h1 {
+    font-size: 2rem;
+}
+
+.btn {
+    margin-top: 20px;
+}

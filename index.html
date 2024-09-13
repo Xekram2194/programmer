@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Programadores</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Favicon -->
+    <link rel="icon" href="img/programmer.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Video de fondo -->
+    <video autoplay muted loop class="background-video">
+        <source src="img/4253156-uhd_3840_2160_25fps.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+    </video>
+
+    <!-- Overlay oscuro -->
+    <div class="overlay"></div>
+
+    <!-- Contenido de la página -->
+    <div class="container">
+        <h1><span class="tagFirst">&lt;Hola&gt;</span> Escribe la primera frase que imprimes al aprender programdor <span class="tagFirst">&lt;/Hola&gt; </span></h1>
+        
+        <!-- Input para la línea de código -->
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="codigo" type="text" placeholder="Escribe tu código aquí">
+            </div>
+        </div>
+
+        <!-- Botón de envío -->
+        <a class="waves-effect waves-light btn green darken-3" onclick="validarCodigo()">Enviar <i class="material-icons right">send</i></a>
+    </div>
+
+    <!-- Importando Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
